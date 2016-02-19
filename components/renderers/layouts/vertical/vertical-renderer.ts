@@ -12,7 +12,7 @@ class MaterialVerticalRenderer implements JSONForms.IRenderer {
         var template = `
             <jsonforms-material-layout>
                 <fieldset>
-                    <div layout-padding layout="column">
+                    <div layout="column">
                         <jsonforms-dynamic-widget ng-repeat="child in element.elements" element="child"></jsonforms-dynamic-widget>
                     </div>
                 </fieldset>
