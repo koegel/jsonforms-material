@@ -14,7 +14,7 @@ class MaterialGroupRenderer implements JSONForms.IRenderer {
         <jsonforms-material-layout class="jsf-group">
             <fieldset>
                 <legend>${label}</legend>
-                <div layout-padding layout="column">
+                <div layout="column">
                     <jsonforms-dynamic-widget ng-repeat="child in element.elements" element="child"></jsonforms-dynamic-widget>
                 </div>
             </fieldset>

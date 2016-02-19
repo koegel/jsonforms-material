@@ -17,7 +17,7 @@ class MaterialCategorizationRenderer implements JSONForms.IRenderer {
                 <md-tab ng-repeat="child in element.elements" label="{{child.label}}">
                     <jsonforms-material-layout>
                         <fieldset>
-                            <md-content layout-padding layout="column">
+                            <md-content layout="column">
                                 <jsonforms-dynamic-widget ng-repeat="innerchild in child.elements" element="innerchild"></jsonforms-dynamic-widget>
                             </md-content>
                         </fieldset>
